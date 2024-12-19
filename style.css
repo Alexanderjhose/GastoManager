@@ -1,0 +1,150 @@
+:root {
+    --gold-color: #C5A47E;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem 0;
+    background: transparent;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 0 1.5rem !important;
+    
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(160, 159, 159, 0.6), rgba(255, 255, 255, 0.6)),
+        url('modern-building.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-buy {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.75rem 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+    background: white;
+    color: black;
+}
+
+/* Navigation Arrows */
+.hero-nav {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-arrow {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+    background: white;
+    color: black;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.text-bauen {
+    color: var(--gold-color);
+    margin-left: 10px;
+}
+
+.about-text {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-image {
+    position: relative;
+}
+
+.office-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 15px 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .col-lg-6:first-child {
+        margin-bottom: 40px;
+    }
+}
